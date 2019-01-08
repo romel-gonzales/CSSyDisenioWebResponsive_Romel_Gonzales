@@ -1,0 +1,262 @@
+body {
+	background-color: #02010a;
+	font-family: 'Dancing Script';
+	font-size: 2em;
+}
+
+.cabecera {
+	background-color: #5b7989;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;
+	margin-left: auto;
+	margin-right: auto;
+	width: 70%;
+}
+
+.cabecera div {
+	box-sizing: border-box;
+	padding: 1px;
+}
+
+.cabecera h1 {
+	text-shadow: 2px 2px 2px #02010a;
+	margin-left: 15px;
+}
+
+.encabezado, .menu-navegar {
+	color: white;
+}  
+
+a {
+	color: white;
+	text-decoration: none;
+	font-size: 0.8em;
+}
+
+#navbar a + a::before {
+	content: "	";
+	white-space: pre;
+}
+
+
+.central {
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	-webkit-flex-flow: row wrap;	
+	background-color: #d5c75f;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.central div {
+	box-sizing: border-box;
+	padding: 1px;
+	width: 33.3%;
+	text-align: center;
+}
+
+.central div img {
+	-moz-box-shadow: 2px 2px 2px #02010a; 
+	-webkit-box-shadow: 2px 2px 2px #02010a;
+	box-shadow: 2px 2px 2px #02010a;
+}
+
+.central img {
+	margin-top: 15px;
+	width: 85%;
+}
+
+.piePagina {
+	width: 70%;
+	background-color: #C6d5c5;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+	margin-left: auto;	
+	margin-right: auto;
+	padding-top: 20px;
+	padding-bottom: 30px;
+	font-size: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.piePagina div {
+	width: 25%;
+}
+
+.piePagina p {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+.paisaje1 {
+	filter: blur(10px);
+	-webkit-filter: blur(10px);
+}
+
+.paisaje2, .paisaje4, .paisaje6 {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+
+.paisaje3 {
+	-webkit-filter: sepia(90%);
+}
+
+
+#contenedor {
+	animation-name: carga-pagina;
+	animation-duration: 1s;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	-o-animation-delay: 0s;
+	animation-delay: 0s;
+}
+
+@keyframes carga-pagina {
+	0% {
+		position: relative;
+		top: 1000px;
+	}
+	100% {
+		position: relative;
+		top: 0px;
+	}	
+}
+
+@media (min-width: 300px) {
+	.cabecera {
+		width: 98%;
+	}
+	.central {
+		width: 98%;
+	}
+	.piePagina {
+		width: 98%;
+	}
+	.encabezado {
+		text-align: center;
+		width: 100%;
+		padding: 255px;
+	}
+	.menu-navegar {
+		width: 100%;
+	}
+	.piePagina div {
+		width: 100%;
+		text-align: center;
+	}	
+	.central div {
+		width:100%;
+	}
+
+	#navbar {
+		width: 90%;
+		text-align: center;
+		margin-right: -5%;
+		text-align: center;
+		margin-bottom: 15px;
+	}	
+}
+
+@media (min-width: 600px) {
+	.cabecera {
+		width: 98%;
+	}
+	.central {
+		width: 98%;
+	}
+	.piePagina {
+		width: 98%;
+	}	
+	.encabezado {
+		text-align: center;
+		width: 100%;
+		padding: 255px;
+	}
+	.menu-navegar {
+		width: 100%;
+	}
+	.piePagina div {
+		width: 100%;
+		text-align: center;
+	}	
+	#navbar {
+		width: 60%;
+		text-align: center;
+		margin-left: 20%;
+		margin-bottom: 15px;
+	}	
+}
+
+@media (min-width: 900px) {
+	
+	.cabecera {
+		width: 70%;
+	}
+	.central {
+		width: 70%;
+	}
+	.encabezado {
+		width: 50%;
+		text-align: left;
+	}
+	.menu-navegar {
+		width: 50%;
+	}
+	#imgCentral img {
+		width: 95%;
+	}	
+	.piePagina {
+		width: 70%;
+	}
+	.piePagina div {
+		width: 25%;
+	    text-align: center;	
+	}	
+	.central div {
+		width: 33.3%;
+	}	
+	#navbar {		
+		//background-color: grey;
+		width: 80%;
+		position: relative;
+		top: 35%;
+		right: -1%;
+		padding-right: -80%;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
